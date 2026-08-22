@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+  background-color: white;
+}
+
+
+.oc {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ig {
+  height: 120%;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("./logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  top: 15px;
+}
+
+.ph {
+  height: 100%;
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ph li a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.ph li a:hover {
+  color: rgb(220, 202, 180);
+}
+
+
+.ph1 {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  list-style: none;
+  font-size: 22px;
+}
+
+.ph1 li a {
+  color: black;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.ph1 li a:hover {
+  color: rgb(220, 202, 180);
+}
+
+
+@media screen and (max-width: 900px) {
+  nav {
+    padding: 0 4%;
+  }
+
+  .oc {
+    width: 70%;
+  }
+
+  .ig {
+    width: 75px;
+  }
+
+  .ph {
+    width: 80%;
+  }
+
+  .ph li a {
+    font-size: 13px;
+  }
+
+  .ph1 {
+    width: 15%;
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  nav {
+    height: 75px;
+    padding: 0 5%;
+  }
+
+  .oc {
+    width: 75%;
+  }
+
+  .ig {
+    width: 65px;
+    height: 100%;
+    top: 5px;
+  }
+
+  .ph {
+    width: 75%;
+    gap: 10px;
+  }
+
+  .ph li a {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .ph1 {
+    width: 20%;
+    gap: 12px;
+    font-size: 19px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  nav {
+    padding: 0 3%;
+  }
+
+  .oc {
+    width: 80%;
+  }
+
+  .ig {
+    width: 50px;
+  }
+
+  .ph {
+    width: 80%;
+    gap: 5px;
+  }
+
+  .ph li a {
+    font-size: 9px;
+  }
+
+  .ph1 {
+    width: 18%;
+    gap: 7px;
+    font-size: 17px;
+  }
+}

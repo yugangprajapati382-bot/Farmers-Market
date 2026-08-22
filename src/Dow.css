@@ -1,0 +1,100 @@
+.pro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 45px;
+    padding: 70px 30px;
+    box-sizing: border-box;
+}
+
+.pro1 {
+    width: 270px;
+    text-align: center;
+}
+
+.pro2,
+.pro4,
+.pro6,
+.pro8 {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75px;
+    
+}
+
+
+.pro2 {
+    background-image: url('./icon-1.png');
+}
+
+.pro4 {
+    background-image: url('./icon-2.png');
+}
+
+.pro6 {
+    background-image: url('./icon-3.png');
+    background-size: 50% 50%;
+
+}
+
+.pro8 {
+    background-image: url('./icon-4.png');
+}
+
+
+
+
+.pro3 h3,
+.pro5 h3,
+.pro7 h3,
+.pro9 h3 {
+    margin: 0 0 5px;
+    font-size: 22px;
+    font-family: cursive;
+    font-weight: 400;
+    color: #b5aa35;
+}
+
+.pro3 h2,
+.pro5 h2,
+.pro7 h2,
+.pro9 h2 {
+    margin: 0 0 12px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #222;
+}
+
+.pro3 p,
+.pro5 p,
+.pro7 p,
+.pro9 p {
+    margin: 0 auto;
+    max-width: 270px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #999;
+}
+
+@media (max-width: 1100px) {
+    .pro {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .pro {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .pro1 {
+        width: 300px;
+    }
+}

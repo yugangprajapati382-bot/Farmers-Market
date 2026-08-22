@@ -1,0 +1,161 @@
+.key {
+    width: 100%;
+    background-color: white;
+    padding: 40px 0 20px;
+}
+
+.key1 {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.key1 h3 {
+    margin: 0 0 5px;
+    color: #b5aa35;
+    font-size: 22px;
+    font-family: cursive;
+    font-weight: 400;
+}
+
+.key1 h1 {
+    margin: 0 0 15px;
+    color: #111;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.key1 p {
+    margin: 0;
+    color: #b0b0b0;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.key2 {
+    width: 1180px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px 18px;
+}
+
+
+.person {
+    text-align: center;
+}
+
+.person h3 {
+    margin: 12px 0 0;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #111;
+}
+
+
+/* Images */
+
+.all1,
+.all2,
+.all3,
+.all4,
+.all5,
+.all6,
+.all7,
+.all8 {
+    width: 100%;
+    height: 275px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Change these image names to your actual image names */
+
+.all1 {
+    background-image: url('./team-1.jpg');
+}
+
+.all2 {
+    background-image: url('./team-2.jpg');
+}
+
+.all3 {
+    background-image: url('./team-3.jpg');
+}
+
+.all4 {
+    background-image: url('./team-4.jpg');
+}
+
+.all5 {
+    background-image: url('./team-5.jpg');
+}
+
+.all6 {
+    background-image: url('./team-6.jpg');
+}
+
+.all7 {
+    background-image: url('./team-7.jpg');
+}
+
+.all8 {
+    background-image: url('./team-8.jpg');
+}
+
+
+/* Tablet */
+
+@media (max-width: 1200px) {
+    .key2 {
+        width: 90%;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+    .key2 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 15px;
+    }
+
+    .all1,
+    .all2,
+    .all3,
+    .all4,
+    .all5,
+    .all6,
+    .all7,
+    .all8 {
+        height: 250px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .key2 {
+        grid-template-columns: 1fr;
+        width: 85%;
+    }
+
+    .all1,
+    .all2,
+    .all3,
+    .all4,
+    .all5,
+    .all6,
+    .all7,
+    .all8 {
+        height: 300px;
+    }
+
+    .key1 h1 {
+        font-size: 32px;
+    }
+}

@@ -1,0 +1,54 @@
+.shop {
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./pp.jpg");
+    background-attachment: fixed;
+}
+
+.shop1 {
+    min-height: 40vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .shop {
+        min-height: 35vh;
+        background-attachment: scroll;
+    }
+
+    .shop1 {
+        width: 80%;
+        min-height: 35vh;
+        font-size: 26px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .shop {
+        min-height: 28vh;
+        background-attachment: scroll;
+    }
+
+    .shop1 {
+        width: 90%;
+        min-height: 28vh;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .shop1 h1 {
+        margin: 0;
+    }
+}

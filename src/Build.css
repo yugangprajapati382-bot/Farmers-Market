@@ -1,0 +1,21 @@
+.but{
+    height: 70vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items:center ;
+    background-image: url("./back3.jpg");
+    background-size: 100% 100%;
+
+}
+.short{
+    height: 35%;
+    width: 20%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-image: url("back.png");
+    background-size: 100% 100%;
+}

@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lin {
+    width: 100%;
+    min-height: 390px;
+
+    background: #fffaf0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 60px;
+
+    padding: 80px 8% 60px;
+}
+
+
+.lik {
+    width: 100%;
+}
+
+.lik h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #111;
+    margin-bottom: 28px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.lik:first-child p {
+    width: 100%;
+    max-width: 390px;
+
+    color: #a8a8a8;
+
+    font-size: 15px;
+    line-height: 27px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+.lik svg {
+    flex-shrink: 0;
+
+    color: #006633;
+    font-size: 17px;
+
+    margin-top: 2px;
+}
+
+.lik li {
+    list-style: none;
+
+    color: #999;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    font-family: Arial, sans-serif;
+}
+
+
+.email-form {
+    display: flex;
+
+    width: 100%;
+    max-width: 380px;
+
+    margin-top: 25px;
+}
+
+.lik input {
+    flex: 1;
+
+    min-width: 0;
+
+    height: 45px;
+    width: 60%;
+    border: none;
+    outline: none;
+
+    padding: 0 14px;
+
+    font-size: 12px;
+    color: #777;
+
+    background: #fff;
+}
+
+.lik input::placeholder {
+    color: #aaa;
+}
+
+.lik button {
+    flex-shrink: 0;
+
+    height: 45px;
+    width: 103px;
+
+    border: none;
+
+    background: #006633;
+    color: white;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.lik button:hover {
+    background: #004d26;
+}
+
+
+.bg {
+    width: 100%;
+    max-width: 300px;
+
+    height: 170px;
+
+    margin-top: 5px;
+
+    background-image: url("./footer.png");
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+
+.lin1 {
+    width: 100%;
+    min-height: 53px;
+
+    background: #d8bb99;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 20px;
+}
+
+.lin1 p {
+    color: white;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+.lic{
+    height: 15%;
+    width: 70%;
+    /* border: 2px solid  saddlebrown ; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .lin {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 50px;
+
+        padding: 70px 6%;
+    }
+
+    .lik:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .bg {
+        max-width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .lin {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding: 55px 30px;
+    }
+
+    .lik {
+        width: 100%;
+    }
+
+    .lik:last-child {
+        grid-column: auto;
+    }
+
+    .lik:first-child p {
+        max-width: 100%;
+    }
+
+    .email-form {
+        max-width: 100%;
+    }
+
+    .bg {
+        width: 100%;
+        max-width: 350px;
+
+        height: 180px;
+    }
+
+    .lin1 {
+        min-height: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .lin {
+        padding: 45px 20px;
+        gap: 40px;
+    }
+
+    .lik h2 {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+
+    .lik:first-child p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .lik li {
+        font-size: 13px;
+    }
+
+    .email-form {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .lik input {
+        width: 100%;
+        height: 45px;
+    }
+
+    .lik button {
+        width: 100%;
+    }
+
+    .bg {
+        height: 150px;
+    }
+
+    .lin1 {
+        min-height: 65px;
+    }
+
+    .lin1 p {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+
+    .lin {
+        padding: 40px 15px;
+    }
+
+    .lik h2 {
+        font-size: 18px;
+    }
+
+    .lik:first-child p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    .lik li {
+        font-size: 12px;
+    }
+
+    .bg {
+        height: 130px;
+    }
+
+    .lin1 p {
+        font-size: 8px;
+    }
+}

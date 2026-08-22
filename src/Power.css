@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    min-height: 100vh;
+    background: #f7f8fa;
+    padding: 100px 5% 70px;
+}
+
+
+.head {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.head h3 {
+    color: #9b873c;
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.head h1 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.head p {
+    color: #aaa;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+
+.cards {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    min-height: 400px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: rgb(255, 246, 226);
+
+    padding-bottom: 30px;
+
+    position: relative;
+
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.top {
+    width: 100%;
+    min-height: 110px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 8px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top h3 {
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.top h1 {
+    font-size: 40px;
+    font-weight: 400;
+
+    font-family:
+        'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        'Lucida Sans',
+        Arial,
+        sans-serif;
+}
+
+
+.best {
+    position: relative;
+    margin-top: 0;
+}
+
+.be {
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(212, 186, 155);
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.best .bow {
+    min-height: 110px;
+}
+
+.bottom {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+.mos {
+    width: 100%;
+    min-height: 180px;
+
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px;
+}
+
+.mos li {
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.bt {
+    padding: 14px 25px;
+
+    border: none;
+
+    color: #f7f8fa;
+    background-color: rgb(4, 88, 47);
+
+    font-size: 13px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.bt:hover {
+    background-color: rgb(170, 140, 105);
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 1100px) {
+
+    .box {
+        padding: 80px 4% 60px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+    }
+
+    .card {
+        min-height: 400px;
+    }
+
+    .head h1 {
+        font-size: 42px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .box {
+        padding: 70px 25px 50px;
+    }
+
+    .head {
+        margin-bottom: 45px;
+    }
+
+    .head h3 {
+        font-size: 20px;
+    }
+
+    .head h1 {
+        font-size: 36px;
+    }
+
+    .head p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        min-height: 380px;
+    }
+
+    .top h1 {
+        font-size: 34px;
+    }
+
+    .mos li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .box {
+        padding: 55px 20px 45px;
+    }
+
+    .head {
+        margin-bottom: 35px;
+    }
+
+    .head h3 {
+        font-size: 18px;
+    }
+
+    .head h1 {
+        font-size: 30px;
+    }
+
+    .head p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+
+        max-width: 350px;
+    }
+
+    .card {
+        min-height: 400px;
+    }
+
+    .top h3 {
+        font-size: 18px;
+    }
+
+    .top h1 {
+        font-size: 38px;
+    }
+
+    .mos {
+        min-height: 180px;
+    }
+
+    .mos li {
+        font-size: 15px;
+    }
+
+    .bt {
+        padding: 14px 30px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+
+    .box {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .head h1 {
+        font-size: 27px;
+    }
+
+    .head p {
+        font-size: 13px;
+    }
+
+    .card {
+        min-height: 380px;
+    }
+}

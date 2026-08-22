@@ -1,0 +1,186 @@
+.pul {
+    width: 100%;
+    height: 580px;
+    position: relative;
+    background-image: url("./par.jpg");
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.pul > img {
+    position: relative;
+    right: 200px;
+    top: 25px;
+}
+
+.pul1 {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+    max-width: 800px;
+
+    text-align: center;
+    color: white;
+}
+
+.pul1 h4 {
+    margin: 15px 0 5px;
+
+    font-size: 24px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.pul1 h1 {
+    margin: 0 0 28px;
+
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.pul1 input {
+    width: 460px;
+    height: 45px;
+
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+
+    font-size: 13px;
+}
+
+.pul1 button {
+    width: 105px;
+    height: 45px;
+
+    border: none;
+    background-color: #006b3c;
+
+    color: white;
+
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+
+    .pul {
+        height: 550px;
+    }
+
+    .pul1 {
+        top: 90px;
+    }
+
+    .pul1 h1 {
+        font-size: 44px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .pul {
+        height: 500px;
+    }
+
+    .pul1 {
+        top: 80px;
+        width: 90%;
+    }
+
+    .pul1 h4 {
+        font-size: 22px;
+    }
+
+    .pul1 h1 {
+        font-size: 38px;
+        margin-bottom: 25px;
+    }
+
+    .pul1 input {
+        width: 60%;
+    }
+
+    .pul1 button {
+        width: 110px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .pul {
+        height: 500px;
+    }
+
+    .pul1 {
+        top: 70px;
+        width: 90%;
+    }
+
+    .pul1 h4 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .pul1 h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+
+    .pul1 input {
+        width: 65%;
+        height: 43px;
+        font-size: 12px;
+    }
+
+    .pul1 button {
+        width: 30%;
+        height: 43px;
+        font-size: 10px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .pul {
+        height: 450px;
+    }
+
+    .pul1 {
+        top: 60px;
+    }
+
+    .pul1 h4 {
+        font-size: 18px;
+    }
+
+    .pul1 h1 {
+        font-size: 25px;
+    }
+
+    .pul1 input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .pul1 button {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,55 @@
+.ser {
+    min-height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./pri.jpg");
+    background-attachment: fixed;
+
+
+}
+
+.ser1 {
+    min-height: 35vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .ser {
+        min-height: 30vh;
+        background-attachment: scroll;
+    }
+
+    .ser1 {
+        width: 80%;
+        min-height: 30vh;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .ser {
+        min-height: 25vh;
+        background-attachment: scroll;
+    }
+
+    .ser1 {
+        width: 90%;
+        min-height: 25vh;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .ser1 h1 {
+        margin: 0;
+    }
+}

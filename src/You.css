@@ -1,0 +1,73 @@
+.keyy {
+    width: 100%;
+    height: 590px;
+    background-image: url("./parallax-main.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cutt {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cutt h1 {
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+
+    line-height: 1.15;
+
+    margin: 0 0 35px 0;
+}
+
+.cutt button {
+    width: 170px;
+    height: 48px;
+
+    border: none;
+    background: #087443;
+
+    color: white;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+.cutt button:hover {
+    background: #065d36;
+}
+
+
+
+
+@media (max-width: 700px) {
+
+    .keyy {
+        height: 550px;
+    }
+
+    .cutt h1 {
+        width: 90%;
+        font-size: 38px;
+    }
+
+    .cutt button {
+        width: 150px;
+    }
+}

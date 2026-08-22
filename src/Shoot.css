@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.pic{
+    height: 50vh;
+    width: 100%;
+    /* border: 2px solid darkslategrey; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    background-image: url("./about.jpg");
+    background-image: cover;
+    background-attachment: fixed;
+}
+.io{
+    height: 60vh;
+    width: 100%;
+    /* border: 2px solid darkslategrey; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    font-size: 30px;
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif
+    
+
+}
