@@ -93,6 +93,13 @@ nav {
 
   .oc {
     width: 70%;
+    /* border: 2px solid red; */
+    position: relative;
+    left: 240px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right:40px ;
   }
 
   .ig {
@@ -101,15 +108,18 @@ nav {
 
   .ph {
     width: 80%;
+    display: none;
   }
 
   .ph li a {
     font-size: 13px;
+    
   }
 
   .ph1 {
     width: 15%;
     font-size: 20px;
+    display: none;
   }
 }
 
